@@ -3,13 +3,13 @@
 `<param>` - обязательный параметр  
 `[param]` - опциональный параметр
 
-| **Physical Volume**<br>**PV**       | ㅤㅤㅤ | **Volume Group**<br>**VG**       |  ㅤㅤㅤ| **Logical Volume**<br>**LV**       |
-| -------- |--| -------- |--| -------- |
-| `pvcreate <device>` - создание PV|    | `vgcreate <vg-name> <device>` - создание VG |  | `lvcreate -L <size> -n <lv-name> <vg>` - создание LV |
-| `pvremove <device>` - удаление PV|    | `vgremove <vg-name>` - удаление vg          |  | `lvremove <lv-name>` - удаление LV |
-| `pvdisplay [device]` - отобразить PV| | `vgdisplay [vg-name]` - отобразить vg       |  | `lvdisplay [lv-name]` - отобразить LV |
-| `pvs` - компактное отображение всех PV| | `vgs` - компактное отображение всех VG    |  | `lvs` - компактное отображение всех LV|
-| | | `vgextend <vg-name> <pv>` - добавить PV к VG | | `lvextend <options>` - расширение LV |
+| **Physical Volume**<br>**PV**       | ㅤㅤㅤ  **Volume Group**<br>**VG**       |  ㅤㅤㅤ **Logical Volume**<br>**LV**       |
+| -------- | -------- | -------- |
+| `pvcreate <device>` - создание PV | `vgcreate <vg-name> <device>` - создание VG | `lvcreate -L <size> -n <lv-name> <vg>` - создание LV |
+| `pvremove <device>` - удаление PV | `vgremove <vg-name>` - удаление vg | `lvremove <lv-name>` - удаление LV |
+| `pvdisplay [device]` - отобразить PV | `vgdisplay [vg-name]` - отобразить vg | `lvdisplay [lv-name]` - отобразить LV |
+| `pvs` - компактное отображение всех PV | `vgs` - компактное отображение всех VG | `lvs` - компактное отображение всех LV|
+| | `vgextend <vg-name> <pv>` - добавить PV к VG | `lvextend <options>` - расширение LV |
 
 ## **lvextend**
 ### Параметры (это далеко не все):
